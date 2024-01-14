@@ -8,12 +8,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-size: 1.25rem;
-
   -webkit-user-select: none;
  -moz-user-select: none;
  -ms-user-select: none;
  user-select: none;
-
  flex-direction: column;
 
 }
@@ -37,6 +35,7 @@ body {
   position: relative;
   top: 1px;
   /* width: 33.3%; */
+  cursor: pointer;
   background-color: transparent;
   /* border: none; */
   border: 1px solid #ccc;
@@ -52,12 +51,15 @@ body {
   border: 1px solid #00e256;
   /* border-bottom-color: #fff; */
   border-right-color: #00e256;
-
+  background: gray;
+  color: white;
   border-radius: 5px 5px 0 0;
 }
 
 .tab-body {
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
+  padding: 0.5rem 7rem;
+
 }
 
 .tab-content {
@@ -66,4 +68,7 @@ body {
 
 .tab-content.active {
   display: block;
+  border: 1px solid #ccc;
+  padding: 10px;
+
 }
